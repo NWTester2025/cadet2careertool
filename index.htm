@@ -227,7 +227,7 @@
       addSection("Qualifications", qualifications, "qualifications");
       addSection("Awards", awards, "awards");
 
-      doc.save("Cadet2Career_Resume.pdf");
+ doc.save(`${name || "Cadet"}_Resume.pdf`);
     }
 
     function populateDropdown(id, options) {
