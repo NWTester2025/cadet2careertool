@@ -22,16 +22,6 @@ $.ajax({
     dataType: 'json',
     success: function(data){
         var jsonData = data;
-
-        var branch = jsonData["ranks"]["air"];
-
-        var rankTemplates = $();
-
-        for(var rank in branch){
-            rankTemplates = rankTemplates.add(rankDropDown(rank));
-        }
-
-        rankTemplates.appendTo('#ranks');
         
         var courses = jsonData["courses"];
         var courseTemplates = $();
