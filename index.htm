@@ -1,28 +1,42 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Cadet2Career Skill Translation Tool</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-</head>
-<body>
-  <h1>Cadet2Career Translation Tool</h1>
-  <label for="name">Your Name:</label>
-  <input type="text" id="name" placeholder="Enter your full name" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadet2Career Skill Translation Tool</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--<link href="./css/index.css" rel="stylesheet">   Gotta redo styling but for now it looks so much better-->
+  </head>
+  <body>
+    <h1>Cadet2Career Translation Tool</h1>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your full name" /><br><br>
 
-  <label for="ranks">Select Ranks:</label>
-  <select id="ranks" multiple></select>
+    <label for="branch">Select Branch:</label><br>
+    <input type="radio" id="air" name="branch"/>
+    <label for="air">Air</label><br>
 
-  <label for="courses">Select Courses  (Hold Ctrl/Cmnd to select more than one):</label>
-  <select id="courses" multiple></select>
+    <input type="radio" id="army" name="branch"/>
+    <label for="army">Army</label><br>
 
-  <label for="qualifications">Select Qualifications  (Hold Ctrl/Cmnd to select more than one):</label>
-  <select id="qualifications" multiple></select>
+    <input type="radio" id="sea" name="branch"/>
+    <label for="sea">Sea</label><br><br>
 
-  <label for="awards">Select Awards (Hold Ctrl/Cmnd to select more than one):</label>
-  <select id="awards" multiple></select>
+    <label for="ranks">Select Rank:</label>
+    <select id="ranks"></select><br><br>
 
-  <button onclick="generatePDF()">Download Resume PDF</button>
-</body>
+    <label>Select Courses:</label><br><br>
+    <div id="courses"></div>
+
+    <br><label>Select Qualifications:</label><br><br>
+    <div id="qualifications"></div>
+
+    <br><label>Select Awards:</label><br><br>
+    <div id="awards"></div>
+
+    <button id="genPdf">Download Resume PDF</button>
+
+    <script type"text/javascript" src="./js/index.js"></script>
+  </body>
 </html>
