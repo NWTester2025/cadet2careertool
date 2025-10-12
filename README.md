@@ -8,4 +8,6 @@ you can edit this json file using [TameJSON](https://www.tamejson.com)
 
 this makes the json simple to edit  
 
-**MAKE SURE THAT THE WAY THE RANKS ARE FORMATTED IN THE JSON STAYS THAT WAY**
+**MAKE SURE THE JSON STAYS FORMATTED THEY WAY IT IS**
+
+

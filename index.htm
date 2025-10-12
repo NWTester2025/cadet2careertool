@@ -6,7 +6,7 @@
     <title>Cadet2Career Skill Translation Tool</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!--<link href="./css/index.css" rel="stylesheet">   Gotta redo styling but for now it looks so much better-->
+    <link href="./css/index.css" rel="stylesheet">
   </head>
   <body>
     <h1>Cadet2Career Translation Tool</h1>
@@ -24,17 +24,24 @@
     <label for="sea">Sea</label><br><br>
 
     <label for="ranks">Select Rank:</label>
-    <select id="ranks"></select><br><br>
+    <select id="ranks"></select><br>
+    
+    <div class="checkbox-container-container">
+      <div class="flex-box-padding">
+        <label>Select Courses:</label><br><br>
+        <div id="courses" class="checkbox-container"></div>
+      </div>
 
-    <label>Select Courses:</label><br><br>
-    <div id="courses"></div>
+      <div class="flex-box-padding">
+        <label>Select Qualifications:</label><br><br>
+        <div id="qualifications" class="checkbox-container"></div>
+      </div>
 
-    <br><label>Select Qualifications:</label><br><br>
-    <div id="qualifications"></div>
-
-    <br><label>Select Awards:</label><br><br>
-    <div id="awards"></div>
-
+      <div class="flex-box-padding">
+        <label>Select Awards:</label><br><br>
+        <div id="awards" class="checkbox-container"></div>
+      </div>
+    </div>
     <button id="genPdf">Download Resume PDF</button>
 
     <script type"text/javascript" src="./js/index.js"></script>

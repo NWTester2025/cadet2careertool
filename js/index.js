@@ -10,8 +10,10 @@ function rankDropDown(rank){
 
 function checkBoxTemplate(name){
     var template = `
-        <input type="checkbox" id="${name}" name="${name}">
-        <label for="${name}">${name}</label><br> 
+        <div class="checkbox">
+            <input type="checkbox" id="${name}" name="${name}">
+            <label for="${name}">${name}</label><br> 
+        </div>
     `
 
     return $(template);
