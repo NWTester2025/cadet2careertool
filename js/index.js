@@ -118,7 +118,7 @@ $.ajax({
             addSection("Qualifications", selectedQualifications, "qualifications");
             addSection("Awards", selectedAwards, "awards");
             
-            doc.save(`${name || Cadet}_Resume.pdf`);
+            doc.save(`${name}_Resume.pdf`);
 
         });
 
